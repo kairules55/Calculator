@@ -1,4 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #102027;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+#titile {
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: "Nanum Myeongjo", serif;
+  color: #ccd6f5;
+}
+
+main {
+  height: 97vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #container {
-    display: grid;
-    grid-template-columns: repeat(3, 40px);
+  padding: 10px;
+  display: grid;
+  height: 500px;
+  width: 400px;
+  background-color: #37464f;
+  color: #102027;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff00;
+  font-size: 2rem;
+  border: solid 1px #c7cc00;
+  border-radius: 5%;
+}
+
+#ans {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 3rem;
+  grid-column: 1/-1;
+  border: solid 2px #c7cc00;
+  background-color: #62717b;
+}
+
+#button15 {
+  grid-row: span 2;
+}
+
+#button12 {
+  grid-column: span 2;
+}
+
+#button14 {
+  grid-column: span 3;
+  border-radius: 0;
+  background-color: ;
 }

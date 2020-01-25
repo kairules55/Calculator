@@ -20,14 +20,14 @@ for (var i = 0; i < buttons.length; i++) {
                 answer.innerText = operand2;
             }
         } else {
-            if(value=="AC"){
+            if(value==="AC"){
                 operand1 = "";
                 operand2 = "";
                 active = 1;
                 answer.innerText = "0";
                 return;
             }
-            if (value === "=") {
+            if (value==="=") {
                 var display = eval(operand1 + operand2);
                 answer.innerText = display;
                 operand1 = display;
